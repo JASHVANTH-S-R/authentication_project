@@ -12,7 +12,7 @@ question_dfs = {
 
 # Define app
 def main():
-    st.title("User Preference Viewer (Admin Access Only)")
+    st.title("User Questionnaire Data (Admin Access Only)")
 
     # Authentication
     username = st.text_input("Enter your email:")
