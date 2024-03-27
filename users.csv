@@ -1,0 +1,6 @@
+userID,emailID,Password,Role
+1,beck.admin@gmail.com,password1,Admin
+2,kevin.user@gmail.com,password2,User
+3,user3@example.com,password3,User
+4,user4@example.com,password4,User
+5,user5@example.com,password5,User
