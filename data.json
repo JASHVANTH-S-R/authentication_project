@@ -1,0 +1,1 @@
+{"face": {"encodings": [], "ids": []}, "grid": {"kevin.user@gmail.com": ["image1", "image6", "image7", "image4"], "beck.admin@gmail.com": ["image5", "image2", "image3", "image8"]}, "roles": {"admin": ["beck.admin@gmail.com"], "employee": ["kevin.user@gmail.com"]}}

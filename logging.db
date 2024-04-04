@@ -1,0 +1,35 @@
+-- Create database
+CREATE DATABASE logging_tracing;
+
+-- Use the database
+USE logging_tracing;
+
+-- Create table: logs
+CREATE TABLE logs (
+    log_id INT PRIMARY KEY,
+    timestamp TIMESTAMP,
+    message VARCHAR(255),
+    severity VARCHAR(50),
+    source VARCHAR(100)
+);
+
+-- Insert sample data into logs table
+INSERT INTO logs (log_id, timestamp, message, severity, source) VALUES
+(1, '2024-03-27 10:15:00', 'Error occurred', 'ERROR', 'Backend Server'),
+(2, '2024-03-27 10:20:00', 'User login successful', 'INFO', 'Authentication'),
+(3, '2024-03-27 10:25:00', 'Data processing completed', 'INFO', 'Data Processing');
+
+-- Create table: traces
+CREATE TABLE traces (
+    trace_id INT PRIMARY KEY,
+    timestamp TIMESTAMP,
+    activity VARCHAR(255),
+    user_id INT,
+    duration INT
+);
+
+-- Insert sample data into traces table
+INSERT INTO traces (trace_id, timestamp, activity, user_id, duration) VALUES
+(1, '2024-03-27 10:00:00', 'User authentication', 123, 50),
+(2, '2024-03-27 10:05:00', 'Data processing', 456, 120),
+(3, '2024-03-27 10:10:00', 'Payment processing', 789, 80);
